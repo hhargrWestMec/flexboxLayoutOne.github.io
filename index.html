@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template One</title>
+    <style>
+
+    body {
+        margin: 0px;
+    }
+    .header {
+        display: flex;
+        background-color: yellowgreen;
+        width: 100vw;
+        height: 20vh;
+
+    }
+
+    .header > div {
+        margin: 10px;
+
+    }
+
+    .article {
+        display: flex;
+        width: 100vp;
+        height: 60vh;
+    }
+
+@media (max-width: 800px) {
+  .article {
+    flex-direction: column;
+  }
+}    
+
+    .article > div {
+        height: 100%; 
+
+    }
+
+    .article > div > p {
+        margin: 10px;
+    
+    }
+
+    .footer {
+        display: flex;
+        width: 100vw;
+        height: 20vh;
+        background-color: yellowgreen;
+    }
+
+    .footer > div {
+        margin: 10px;
+
+    }
+
+
+
+    </style>
+
+</head>
+<body>
+    <header class="header">
+        <div> Header </div>
+    </header>
+
+    <article class="article">
+        <div style="flex-grow:4; background-color: white;"><p> Article </p> </div>
+        <div style="flex-grow:1; background-color: beige"><p> Aside </p> </div>
+        <div style="flex-grow:1; background-color: #D7E8D4"><p> Nav </p></div>
+    </article>
+
+    <footer class="footer">
+        <div> Footer </div>
+    </footer>
+</body>
+</html>
